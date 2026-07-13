@@ -1,23 +1,26 @@
-class Amazon {
-	public static void createAccount(long contactNumber, String name){
+class Amazon{
+	public static void main (String amzon[]){
+		String headQuaters = "Seattle, Washington, USA";
+		int foundedYear = 1994;
+		String numOfEmployees = "approx. 1.57 million";
+		String platform = "E-commerce";
 		
-		System.out.println("method Started");
 		
-		System.out.println("mobile number is :" + contactNumber);
-		System.out.println("your name :" + name);
+		System.out.println("Head Quaters is in : " + headQuaters);
+		System.out.println("Founded in the year : " + foundedYear);
+		System.out.println("total num of employees working : " + numOfEmployees);
+		System.out.println("which platformit it is : " + platform);
 		
-		System.out.println("method ended");
-	}
-	
-	public static void main (String amazon[]){
 		
-		System.out.println("main Started");
+		String categories[] = {"Top Picks","Amazon Pay","Mobiles & Electronics","Deals &","Fashion & Beauty",
+		"Home & Furniture","Groceries & Pet Supplies","Travel & Auto","Toys & Kids","Sports & Fitness","Gifting",
+		"Sell on Amazon","Business Purchases","Your Things","Amazon Bazaar","Books & Education","Video & Music",
+		"Prime","Games & Live Shopping","Pharmacy & Household"};
 		
-		long mobileNumber = 9876543210l;
+		System.out.println("List of categories:");
 		
-		createAccount( mobileNumber , "Sharon Jessy T S");
-		
-		System.out.println("main ended");
-		
+		for (String category : categories){
+			System.out.println(category);
+		}
 	}
 }
